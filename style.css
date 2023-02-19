@@ -1,0 +1,37 @@
+:root {
+    /* ### Primary */
+
+-Red: hsl(1, 90%, 64%);
+-Blue: hsl(219, 85%, 26%);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Verylightgrayishblue: hsl(210, 60%, 98%);
+--Lightgrayishblue1: hsl(211, 68%, 94%);
+--Lightgrayishblue2: hsl(205, 33%, 90%);
+--Grayishblue: hsl(219, 14%, 63%);
+--Darkgrayishblue: hsl(219, 12%, 42%);
+--Verydarkblue: hsl(224, 21%, 14%);
+
+}
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+}
+#card_itself {
+    background-color: bisque;
+    margin: 4rem auto;
+    width: 25rem;
+
+}
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
