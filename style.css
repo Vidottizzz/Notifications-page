@@ -26,12 +26,68 @@
     font-family: "Plus Jakarta Sans";
     font-size: 16px;
 }
+body {
+    background-color: beige;
+}
 #card_itself {
-    background-color: bisque;
+    background-color: white;
     margin: 4rem auto;
     width: 25rem;
+    padding: 1.5rem;
+}
+
+.noti_div {
+
+display: flex;
+padding: 1rem 1rem;
+margin: 1rem 0;
+background-color: var(--Verylightgrayishblue);
 
 }
+.noti_div1 {
+
+display: block;
+padding: 1rem 1rem;
+margin: 1rem 0;
+background-color: var(--Verylightgrayishblue);
+
+}
+.noti_div1 img {
+    width:2.5rem;
+    height: 2.5rem;
+    
+    }
+
+.noti_name{
+
+
+}
+
+.noti_div img {
+width:2.5rem;
+height: 2.5rem;
+
+}
+
+.noti_time {
+
+
+}
+
+#hold_message {
+    display: flex;
+}
+/* header */
+
+
+
+
+/* main */
+
+
+
+
+/* footer */
 .attribution { font-size: 11px; text-align: center; }
 
 .attribution a { color: hsl(228, 45%, 44%); }
