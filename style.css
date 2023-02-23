@@ -31,12 +31,24 @@ body {
 #card_itself {
   background-color: white;
   margin: 4rem auto;
-  width: 27rem;
+  width: 27.3rem;
   padding: 1.5rem;
 }
 #title-wrapper {
   display: flex;
   justify-content: space-between;
+}
+.hold-dot {
+  display: flex;
+}
+.red-dot {
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.34rem;
+
 }
 .noti_div {
   display: flex;
@@ -44,14 +56,18 @@ body {
   margin: 1rem 0;
   background-color: var(--Verylightgrayishblue);
 }
+.noti_div .hold_desc #bold-gray {
+  color: var(--Darkgrayishblue);
+  font-weight: 800;
+}
 .noti_div1 {
   display: block;
   padding: 1rem 1rem;
   margin: 1rem 0;
 }
 .noti_div1 img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.8rem;
+  height: 2.8rem;
 }
 .noti_div2{
     display: flex;
@@ -59,12 +75,21 @@ body {
     margin: 1rem 0;
 }
 .noti_div2 img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.8rem;
+  height: 2.8rem;
 }
 
-.noti_name {
+.noti_div .noti_name {
     font-weight: 800;
+    color: black;
+}
+.noti_div1 .noti_name {
+    font-weight: 800;
+    color: black;
+}
+.noti_div2 .noti_name {
+    font-weight: 800;
+    color: black;
 }
 .noti_div img {
   width: 2.8rem;
@@ -76,16 +101,25 @@ body {
   margin-left: 3.4rem;
   border: 1px solid var(--Lightgrayishblue2);
 }
+#hold_msg {
+  color: var(--Darkgrayishblue);
+}
+.noti-desc {
+  color: var(--Darkgrayishblue)
+
+}
 .noti_time {
-    margin-top: 0.2rem;
+    margin-top: 0.1rem;
     color: var(--Grayishblue);
 }
 .noti_time1 {
     margin-left: 3.4rem;
-    margin-top: 0.2rem;
+    margin-top: 0.1rem;
     color: var(--Grayishblue);
-
-    
+}
+#chess-img {
+  width: 3rem;
+  height: 3rem;
 }
 #hold_message {
   display: flex;
