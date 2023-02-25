@@ -83,6 +83,16 @@ color: var(--blue);
   background-color: var(--Verylightgrayishblue);
   border-radius: 0.5rem;
 }
+.noti_div:hover {
+  background-color: var(--Lightgrayishblue1);
+}
+.noti_div1:hover {
+  background-color: var(--Lightgrayishblue1);
+}
+.noti_div2:hover {
+  background-color: var(--Lightgrayishblue1);
+}
+
 .noti_div .hold_desc #bold-gray {
   color: var(--Darkgrayishblue);
   font-weight: 800;
@@ -91,10 +101,14 @@ color: var(--blue);
   color: var(--blue);
   cursor: pointer;
 }
-.noti_div1 {
+.block {
   display: block;
+
+}
+.noti_div {
   padding: 1rem 1rem;
   margin: 1rem 0;
+  background-color: var(--Verylightgrayishblue);
 }
 .noti_div1 img {
   width: 2.8rem;
@@ -104,6 +118,7 @@ color: var(--blue);
   display: flex;
   padding: 1rem 1rem;
   margin: 1rem 0;
+  background-color: var(--Verylightgrayishblue);
 }
 .noti_div2 img {
   width: 2.8rem;
@@ -149,6 +164,8 @@ color: var(--blue);
 #hold_msg:hover {
 background-color: var(--Lightgrayishblue1);
 cursor: pointer;
+background-color: var(--Grayishblue);
+color: white;
 }
 
 .noti-desc {
@@ -176,6 +193,7 @@ cursor: pointer;
 .hold_desc {
   padding: 0 1rem;
 }
+
 .chess-blue {
   color: var(--blue);
   font-weight: 800;
@@ -256,20 +274,24 @@ cursor: pointer;
     color: var(--Darkgrayishblue);
     font-weight: 800;
   }
-  .noti_div1 {
-    display: block;
-    padding: 1rem 1rem;
-    margin: 1rem 0;
+.block {
+  display: block;
+}
+  .hide {
+    display:none;
+    visibility: hidden;
+  }
+  .background-read {
+    background-color: white;
   }
   .noti_div1 img {
     width: 2.8rem;
     height: 2.8rem;
   }
-  .noti_div2 {
+  flex {
     display: flex;
-    padding: 1rem 1rem;
-    margin: 1rem 0;
   }
+
   .noti_div2 img {
     width: 2.8rem;
     height: 2.8rem;
@@ -312,9 +334,10 @@ cursor: pointer;
     font-weight: 800;
   }
   #chess-img {
-    margin-left: 10.8rem;
+    left: 39.4rem;
     width: 3rem;
     height: 3rem;
+    position: absolute;
   }
   #hold_message {
     display: flex;
