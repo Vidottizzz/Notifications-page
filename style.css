@@ -1,8 +1,8 @@
 :root {
   /* ### Primary */
 
-  -red: hsl(1, 90%, 64%);
-  -blue: hsl(219, 85%, 26%);
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
 
   /* ### Neutral */
 
@@ -26,9 +26,11 @@
   font-size: 14px;
 }
 body {
-  background-color: beige;
+  background-color: var(--Grayishblue);
+  word-spacing: 0.08rem;
 }
 #card_itself {
+  position: relative;
   background-color: white;
   margin: 4rem auto;
   width: 27.3rem;
@@ -37,24 +39,43 @@ body {
 #title-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
 }
+#title-wrapper h1 {
+  font-size: 1.5rem;
+}
+#right-top-text {
+  color: var(--Darkgrayishblue);
+}
+#title-num {
+  position: absolute;
+  font-size: 1.1rem;
+  margin-left: 0.7rem;
+  color: white;
+padding: 0.3rem 0.9rem;
+background-color: var(--blue);
+border-radius: 0.4rem;
+top: 1.8rem;
+}
+
 .hold-dot {
   display: flex;
 }
 .red-dot {
   height: 8px;
   width: 8px;
-  background-color: red;
+  background-color: var(--red);
   border-radius: 50%;
   display: inline-block;
   margin-left: 0.34rem;
-
 }
 .noti_div {
   display: flex;
   padding: 1rem 1rem;
   margin: 1rem 0;
   background-color: var(--Verylightgrayishblue);
+  border-radius: 0.5rem;
 }
 .noti_div .hold_desc #bold-gray {
   color: var(--Darkgrayishblue);
@@ -69,10 +90,10 @@ body {
   width: 2.8rem;
   height: 2.8rem;
 }
-.noti_div2{
-    display: flex;
-    padding: 1rem 1rem;
-    margin: 1rem 0;
+.noti_div2 {
+  display: flex;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
 }
 .noti_div2 img {
   width: 2.8rem;
@@ -80,16 +101,16 @@ body {
 }
 
 .noti_div .noti_name {
-    font-weight: 800;
-    color: black;
+  font-weight: 800;
+  color: black;
 }
 .noti_div1 .noti_name {
-    font-weight: 800;
-    color: black;
+  font-weight: 800;
+  color: black;
 }
 .noti_div2 .noti_name {
-    font-weight: 800;
-    color: black;
+  font-weight: 800;
+  color: black;
 }
 .noti_div img {
   width: 2.8rem;
@@ -98,24 +119,26 @@ body {
 #hold_msg {
   padding: 1rem;
   margin-top: 1rem;
-  margin-left: 3.4rem;
+  margin-left: 3.8rem;
   border: 1px solid var(--Lightgrayishblue2);
-}
-#hold_msg {
+  border-radius: 0.3rem;
   color: var(--Darkgrayishblue);
 }
-.noti-desc {
-  color: var(--Darkgrayishblue)
 
+.noti-desc {
+  color: var(--Darkgrayishblue);
 }
 .noti_time {
-    margin-top: 0.1rem;
-    color: var(--Grayishblue);
+  margin-top: 0.15rem;
+  color: var(--Grayishblue);
 }
 .noti_time1 {
-    margin-left: 3.4rem;
-    margin-top: 0.1rem;
-    color: var(--Grayishblue);
+  margin-left: 3.8rem;
+  color: var(--Grayishblue);
+}
+#nathan-post {
+  color: var(--Darkgrayishblue);
+  font-weight: 800;
 }
 #chess-img {
   width: 3rem;
@@ -126,6 +149,10 @@ body {
 }
 .hold_desc {
   padding: 0 1rem;
+}
+.chess-blue {
+  color: var(--blue);
+  font-weight: 800;
 }
 /* header */
 
