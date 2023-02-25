@@ -7,7 +7,7 @@
   /* ### Neutral */
 
   --White: hsl(0, 0%, 100%);
-  --Verylightgrayishblue: hsl(210, 60%, 98%);
+  --Verylightgrayishblue: hsl(240, 29%, 93%);
   --Lightgrayishblue1: hsl(211, 68%, 94%);
   --Lightgrayishblue2: hsl(205, 33%, 90%);
   --Grayishblue: hsl(219, 14%, 63%);
@@ -29,6 +29,10 @@ body {
   background-color: var(--Grayishblue);
   word-spacing: 0.08rem;
 }
+
+.hide{
+  display: none;
+    }
 #card_itself {
   position: relative;
   background-color: white;
@@ -81,6 +85,12 @@ color: var(--blue);
   padding: 1rem 1rem;
   margin: 1rem 0;
   background-color: var(--Verylightgrayishblue);
+  border-radius: 0.5rem;
+}
+.noti_div1 {
+  display: flex;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
   border-radius: 0.5rem;
 }
 .noti_div:hover {
@@ -274,13 +284,13 @@ cursor: pointer;
     color: var(--Darkgrayishblue);
     font-weight: 800;
   }
+  .hide{
+display: none;
+  }
 .block {
   display: block;
 }
-  .hide {
-    display:none;
-    visibility: hidden;
-  }
+
   .background-read {
     background-color: white;
   }
