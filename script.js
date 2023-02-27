@@ -19,16 +19,17 @@ function myFunction() {
 
 notiDiv.map((el) => {
   el.addEventListener("click", () => {
-    el.classList.add("background-read");
+    el.classList.remove("backgroud-unread");
     el.lastElementChild.firstElementChild.lastElementChild.classList.remove("red-dot");
-  
-      if (count > -1) {
-        count--;
-        titleNum.innerHTML = count;
-        if (count === 0) titleNum.classList.add("hide");
-      }
-    
+    if (count > -1) {
+      count--;
+      titleNum.innerHTML = count;
+      if (count === 0) titleNum.classList.add("hide");
+    }
   });
+  
+    
+  
 
   // Ponto vermelho
   // redDot.map((el) => {
@@ -40,7 +41,7 @@ notiDiv.map((el) => {
   redDot.map((ele) => {
     allRead.addEventListener("click", () => {
       ele.classList.remove("red-dot");
-      el.classList.add("background-read");
+      el.classList.remove("backgroud-unread");
       titleNum.classList.add("hide");
     });
   });

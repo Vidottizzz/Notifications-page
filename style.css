@@ -26,8 +26,11 @@
   font-size: 14px;
 }
 body {
-  background-color: var(--Grayishblue);
+  background-color: rgb(37, 37, 37);
   word-spacing: 0.08rem;
+}
+.background-read {
+  background-color: white;
 }
 
 .hide{
@@ -36,8 +39,8 @@ body {
 #card_itself {
   position: relative;
   background-color: white;
-  margin: 4rem auto;
-  width: 27.3rem;
+  margin: 2rem auto;
+  width: 27.7rem;
   padding: 1.5rem;
   border-radius: 0.4rem;
 }
@@ -84,7 +87,6 @@ color: var(--blue);
   display: flex;
   padding: 1rem 1rem;
   margin: 1rem 0;
-  background-color: var(--Verylightgrayishblue);
   border-radius: 0.5rem;
 }
 .noti_div1 {
@@ -118,6 +120,9 @@ color: var(--blue);
 .noti_div {
   padding: 1rem 1rem;
   margin: 1rem 0;
+
+}
+.backgroud-unread {
   background-color: var(--Verylightgrayishblue);
 }
 .noti_div1 img {
@@ -217,13 +222,14 @@ cursor: pointer;
 
 /* footer */
 .attribution {
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
   margin-bottom: 1rem;
+  color: white;
 }
 
 .attribution a {
-  color: var(--blue);
+  color: var(--red);
 }
 .attribution a:hover {
   font-weight: 800;
@@ -273,11 +279,13 @@ cursor: pointer;
     display: inline-block;
     margin-left: 0.34rem;
   }
+  .backgroud-unread {
+    background-color: var(--Verylightgrayishblue);
+  }
   .noti_div {
     display: flex;
     padding: 1rem 1rem;
     margin: 1rem 0;
-    background-color: var(--Verylightgrayishblue);
     border-radius: 0.5rem;
   }
   .noti_div .hold_desc #bold-gray {
